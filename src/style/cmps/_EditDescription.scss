@@ -1,0 +1,46 @@
+.edit-description {
+    .fake-desc {
+        background-color: $clr10;
+        color: $clr1;
+        padding: 8px 12px;
+        width: 98%;
+        height: 56px;
+    }
+    h3 {
+        margin: 0;
+        padding-top: 5px;
+    }
+    p {
+        margin: 8px 0;
+        height: auto;
+        color: $clr1;
+    }
+    .do-edit-desc {
+        width: 98%;
+        margin-top: 10px;
+        textarea {
+            overflow-wrap: break-word;
+            background-color: $clr7;
+            border-radius: 3px;
+            overflow: hidden;
+            box-shadow: none;
+            border: none;
+            line-height: 24px;
+            min-height: 108px;
+            padding: 4px 8px 7px;
+            outline: none;
+            width: 100%;
+            &:focus {
+                background-color: $clr7;
+                box-shadow: inset 0 0 0 2px $clr5;
+            }
+        }
+        .desc-btns {
+            span {
+                margin: 8px 0 0 8px;
+                background-color: unset;
+                cursor: pointer;
+            }
+        }
+    }
+}

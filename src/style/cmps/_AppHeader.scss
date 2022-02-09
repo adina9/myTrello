@@ -1,0 +1,42 @@
+.app-header {
+    background-color: rgba(0, 0, 0, 0.32);
+    height: 40px;
+    padding: 4px 4px;
+    width: 100%;
+    z-index: 1;
+    color: $clr7;
+    top: 0;
+    > * {
+        cursor: pointer;
+    }
+    h3 {
+        letter-spacing: 1.5px;
+    }
+    .left-side {
+    }
+    .right-side {
+        .search {
+            width: 250px;
+            color: $clr7;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            padding: 0 8px;
+            margin-left: 4px;
+            margin-right: 4px;
+            background-color: #ffffff4d;
+            input {
+                background-color: unset;
+                border: none;
+                &::placeholder {
+                    color: $clr7;
+                }
+                &:focus {
+                    outline: none;
+                }
+            }
+            &:focus {
+                background-color: $clr7;
+                color: $clr1;
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.card-move {
+    h4 {
+        margin: 0;
+        font-size: 12px;
+        font-weight: 600;
+        margin-top: 8px;
+    }
+    form {
+        gap: 8px;
+        margin-top: 8px;
+        select {
+            color: $clr1;
+            height: 48px;
+            border-radius: 3px;
+            border: none;
+            cursor: pointer;
+            background-color: $clr10;
+            display: flex;
+            width: 100%;
+            -webkit-appearance: none;
+            padding: 0 12px;
+            &:hover {
+                background-color: $clr11;
+            }
+            &:focus {
+                outline: none;
+            }
+            &:active:not(option) {
+                background-color: #e4f0f6;
+                color: #0079bf;
+            }
+        }
+        div:not(.add-btn) {
+            gap: 8px;
+            margin-top: 8px;
+            label[for="groupId"] {
+                flex: 1;
+            }
+        }
+        .add-btn {
+            width: 90px;
+            margin-top: 16px;
+        }
+    }
+}

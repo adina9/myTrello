@@ -1,0 +1,15 @@
+.item-action {
+    > * {
+        cursor: pointer;
+        text-align: left;
+        display: block;
+        font-weight: normal;
+        padding: 6px 12px;
+        position: relative;
+        margin-left: -4.2%;
+        width: 110%;
+        &:hover {
+            background-color: $clr11;
+        }
+    }
+}

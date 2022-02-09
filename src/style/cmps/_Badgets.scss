@@ -1,0 +1,45 @@
+.badgets {
+    justify-content: flex-start;
+    margin: 10px 0 3px;
+    row-gap: 5px;
+    .badgets-inner-container {
+        display: flex;
+        align-items: center;
+        color: #6b778c;
+        margin-right: 12px;
+
+        span {
+            &:first-child {
+                font-size: 15px;
+                margin-right: 3px;
+                &[data="attachment"] {
+                    transform: rotate(-45deg);
+                }
+            }
+            &:last-child:not([data="subject"]) {
+                font-size: 12px;
+            }
+        }
+        &.isDuedate {
+            height: 22px;
+            border-radius: 3px;
+            padding: 3px 4px;
+            font-size: 12px;
+        }
+        &.allDone {
+            background-color: #61bd4f;
+            border-radius: 3px;
+            color: $clr7;
+            padding: 3px 4px;
+        }
+    }
+    .members {
+        color: $clr7;
+        flex-direction: row-reverse;
+        right: -7px;
+        bottom: 0;
+        .avatar {
+            margin-right: 5px;
+        }
+    }
+}

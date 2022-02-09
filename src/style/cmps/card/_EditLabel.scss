@@ -1,0 +1,32 @@
+.edit-label {
+    h4 {
+        font-size: 12px;
+    }
+    span {
+        &:first-of-type {
+            font-size: small;
+            top: 5%;
+            left: 5%;
+            cursor: pointer;
+        }
+    }
+    .colors {
+        width: 100%;
+        height: 72px;
+        gap: 7px;
+        margin-top: 4px;
+        > * {
+            width: 50px;
+            height: 32px;
+            span {
+                color: $clr7;
+            }
+        }
+    }
+    .labels-btns {
+        margin-top: 15px;
+         > :last-child {
+            background-color: $clr12;
+        }
+    }
+}

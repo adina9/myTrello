@@ -1,0 +1,20 @@
+.board {
+    height: 100vh;
+    z-index: 0;
+    overflow-x: auto;
+    .board-area {
+        top: 85px;
+        z-index: -1;
+    }
+    // &::-webkit-scrollbar {
+    //     height: 12px;
+    // }
+    // &::-webkit-scrollbar-track {
+    //     background: #00000052;
+    //     border-radius: 10px;
+    // }
+    // &::-webkit-scrollbar-thumb {
+    //     background: #ccccccc4;
+    //     border-radius: 10px;
+    // }
+}

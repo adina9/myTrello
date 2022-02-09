@@ -1,0 +1,26 @@
+.pop-over {
+    background-color: $clr7;
+    box-shadow: 0 8px 16px -4px #091e4240, 0 0 0 1px $clr11;
+    width: 304px;
+    z-index: 3;
+    padding: 0 12px 12px;
+    .pop-over-header {
+        height: 40px;
+        margin-bottom: 8px;
+        border-bottom: 1px solid $clr13;
+        .pop-over-header-title {
+            color: $clr3;
+            line-height: 40px;
+            margin: 0 12px;
+            padding: 0 32px;
+            position: relative;
+        }
+        a {
+            color: #6b778c;
+            padding: 10px 12px 10px 8px;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+}

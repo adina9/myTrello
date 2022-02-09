@@ -1,0 +1,91 @@
+.group-card {
+    max-width: 256px;
+    min-height: 20px;
+    margin: 4px auto;
+    cursor: pointer;
+    z-index: 0;
+    .bgColor {
+        top: 0;
+        left: 0;
+        width: 100%;
+        border-radius: 3px 3px 0 0;
+    }
+    a {
+        width: 27.5px;
+        height: 27.2px;
+        position: absolute;
+        border-radius: 3px;
+        background-color: #f4f5f7cc;
+        right: 2.5px;
+        top: 2.4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        &::before {
+            content: "\e928";
+            font-size: 15px;
+            &:hover {
+                background-color: #dfdfdfcc;
+            }
+        }
+        &:hover {
+            background-color: #e9e9e9;
+            color: $clr1;
+        }
+    }
+    .card-details {
+        z-index: 1;
+        span {
+            word-wrap: break-word;
+        }
+
+        // .labels-list {
+        //     gap: 4px;
+        //     margin-bottom: 4px;
+        //     > * {
+        //         height: 8px;
+        //         font-size: 12px;
+        //         font-weight: 700;
+        //         width: 40px;
+        //         color: $clr7;
+        //         border-radius: 4px;
+        //         &.isClicked {
+        //             height: 16px;
+        //             padding: 0 8px;
+        //             width: auto;
+        //         }
+        //     }
+        //     &:hover {
+        //         > * {
+        //             filter: brightness(90%);
+        //         }
+        //     }
+        // }
+    }
+    &.full-color {
+        .card-details {
+            z-index: 0;
+            span {
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 20px;
+            }
+        }
+        &:hover {
+            filter: contrast(120%);
+        }
+    }
+    &:hover {
+        background-color: $clr8;
+    }
+    &.editing {
+        box-shadow: none;
+        .card-details{
+            height: 96px;
+        }
+    }
+    .dark-bakcground{
+        background-color: khaki;
+    }
+}

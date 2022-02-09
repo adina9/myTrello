@@ -1,0 +1,40 @@
+.attaches-trello {
+    margin-left: 65px;
+    margin-right: 1.5%;
+    margin-bottom: 20px;
+    h3 {
+        margin-bottom: 10px;
+    }
+    .attaches-container {
+        .attach {
+            height: fit-content;
+            width: 49%;
+            padding: 0% 2%;
+            .inner-container-attach .labels-list {
+                > * {
+                    height: 16px;
+                    padding: 0 8px;
+                    width: auto;
+                    font-size: 12px;
+                    font-weight: 700;
+                    color: $clr7;
+                    border-radius: 4px;
+                }
+                &:hover {
+                    > * {
+                        filter: brightness(100%);
+                    }
+                }
+            }
+            .remove {
+                text-decoration: underline;
+                margin-left: -10px;
+                margin-top: 5px;
+                color: $clr3;
+                &:hover {
+                    color: $clr1;
+                }
+            }
+        }
+    }
+}

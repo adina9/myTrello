@@ -1,0 +1,63 @@
+.dynamic-card-cmp {
+    .dyn {
+        background-color: $clr10;
+        height: 32px;
+        width: 168px;
+        padding: 6px 12px;
+        cursor: pointer;
+        margin-top: 8px;
+        line-height: 20px;
+        letter-spacing: 0.1px;
+        span {
+            position: inherit;
+            display: flex;
+            align-self: center;
+            font-size: 15px;
+            margin-right: 8px;
+        }
+        & > *::before {
+            font-size: 15px;
+            margin-right: 8px;
+            margin-left: -3px;
+        }
+        &0-0 ::before {
+            content: "\e946";
+        }
+        &0-1 ::before {
+            content: "\e93f";
+        }
+        &0-2 ::before {
+            content: "\e91a";
+        }
+        &0-4 ::before {
+            content: "\e908";
+        }
+        &0-5 ::before {
+            content: "\e914";
+        }
+        &1-0 ::before {
+            content: "\e94a";
+        }
+        &1-1 ::before {
+            content: "\e91f";
+        }
+        &1-2 ::before {
+            content: "\e907";
+        }
+        // div:nth-child(2) {
+        //     margin-top: 20px;
+        // }
+
+        &:hover {
+            color: #091e42;
+            background-color: $clr11;
+        }
+        &:active {
+            background-color: #e4f0f6;
+            border: none;
+            box-shadow: none;
+            color: $clr5;
+            outline: 0;
+        }
+    }
+}

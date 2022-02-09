@@ -1,0 +1,234 @@
+// flex helpers
+
+.flex {
+    display: flex;
+
+    > *.full {
+        flex: 1;
+    }
+    &.wrap {
+        flex-wrap: wrap;
+    }
+    &.col {
+        flex-direction: column;
+    }
+    &.j-center {
+        justify-content: center;
+    }
+    &.a-center {
+        align-items: center;
+    }
+    &.j-between {
+        justify-content: space-between;
+    }
+    &.j-evenly {
+        justify-content: space-evenly;
+    }
+    &.j-around {
+        justify-content: space-around;
+    }
+}
+
+//others:
+
+.grid {
+    display: grid;
+}
+
+.ma {
+    margin: auto;
+}
+
+.tac {
+    text-align: center;
+}
+.tas {
+    text-align: start;
+}
+
+.ttc {
+    text-transform: capitalize;
+}
+.cup {
+    cursor: pointer;
+}
+
+.clean-list {
+    list-style: none;
+    padding-inline-start: 0;
+}
+.pa {
+    position: absolute;
+}
+.pf {
+    position: fixed;
+}
+.pr {
+    position: relative;
+}
+
+.bor {
+    border-radius: 3px;
+}
+.pad {
+    padding: 5px;
+}
+//other:
+.group-item {
+    background-color: $clr7;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 #091e4240;
+    padding: 6px 8px;
+}
+.font {
+    font-size: 14px;
+    font-weight: 400;
+}
+.edit-desc {
+    height: 32px;
+    width: 48px;
+    margin-left: 12px;
+    background-color: $clr10;
+    cursor: pointer;
+    transition: ease 0.085s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    &:hover {
+        background-color: $clr11;
+    }
+    &:active {
+        background-color: #e4f0f6;
+        color: #0079bf;
+    }
+}
+.add-btn {
+    background-color: $clr5;
+    color: $clr7;
+    cursor: pointer;
+    width: 70px;
+    height: 32px;
+    font-size: 14px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+    justify-content: center;
+    &:hover {
+        // filter: saturate(85%) brightness(85%);
+        background-color: $clr6;
+        color: $clr7;
+    }
+}
+
+.close-edit {
+    font-size: 20px;
+    position: absolute;
+    top: 5px;
+    width: 36px;
+    height: 36px;
+    color: $clr9;
+    cursor: pointer;
+    right: 5px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    align-items: center;
+    &::before {
+        content: "\e91c";
+    }
+    &:hover {
+        background-color: #00000014;
+    }
+}
+
+.menu-section {
+    width: 100%;
+    height: calc(100% - 50px);
+    top: 50px;
+    // transform: translateX(0);
+    // transition: ease-in 0.2s;
+    // &.come {
+    //     transform: translateX(100%);
+    //     // animation: slideIn 0.2s ease-in;
+    // }
+    svg:not(:root).svg-inline--fa {
+        width: 35px;
+        height: 20px;
+        position: absolute;
+        left: 0;
+    }
+    .title {
+        font-weight: 600;
+        margin-left: 30px;
+    }
+    &.leave {
+        transform: translateX(0);
+    }
+    @keyframes slideIn {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(100%);
+        }
+    }
+}
+
+.card-pop-input {
+    overflow-wrap: break-word;
+    background-color: #fafbfc;
+    border-radius: 3px;
+    box-shadow: none;
+    border: none;
+    height: 36px;
+    line-height: 20px;
+    padding: 8px 12px;
+    box-shadow: inset 0 0 0 2px #dfe1e6;
+    margin: 4px 0 12px;
+    color: $clr1;
+    width: 100%;
+    &:focus {
+        background-color: $clr7;
+        box-shadow: inset 0 0 0 2px $clr5;
+        outline: none;
+    }
+}
+.card-pop-over {
+    h4 {
+        @include h4-title;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.h4-title {
+    @include h4-title;
+}
+
+.add-plus {
+    &::before {
+        content: "\002B";
+        padding: 0 3px 5px 5px;
+        font-size: 28px;
+        font-weight: 100;
+    }
+}
+
+.rect {
+    cursor: pointer;
+
+    &:hover {
+        filter: saturate(85%) brightness(85%);
+    }
+    &.selected {
+        box-shadow: 0 0 0 2px $clr7, 0 0 0 4px $clr5;
+        filter: none;
+        &:hover {
+            box-shadow: 0 0 0 2px $clr7, 0 0 0 4px #5ba4cf;
+        }
+    }
+}

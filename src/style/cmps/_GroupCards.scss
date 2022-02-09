@@ -1,0 +1,23 @@
+.group-cards {
+    max-height: 78vh;
+    overflow-y: overlay;
+    overflow-y: auto;
+    // padding-right: 5px;
+    &::-webkit-scrollbar {
+        width: 8px;
+        // margin-left: 10px;
+    }
+    &::-webkit-scrollbar-track {
+        background: #dadbe2;
+        border-radius: 4px;
+        margin-left: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: #bfc4ce;
+        border-radius: 4px;
+        margin-left: 10px;
+    }
+    a {
+        color: $clr1;
+    }
+}

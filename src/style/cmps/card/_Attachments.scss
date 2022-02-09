@@ -1,0 +1,92 @@
+.attaches-normal {
+    margin-left: 65px;
+    margin-right: 1.5%;
+    margin-bottom: 20px;
+    h3 {
+        margin-bottom: 10px;
+    }
+    .attaches-container {
+        .attach {
+            width: 100%;
+
+            padding: 3px;
+            margin-bottom: 10px;
+            img {
+                width: 112px;
+                height: 80px;
+                border-radius: 3px;
+                margin-right: 3%;
+                object-fit: contain;
+                background-color: #584d42;
+            }
+            .attach-details {
+                margin-top: 5px;
+                .name-and-checkout {
+                    span {
+                        &:first-child {
+                            font-weight: 700;
+                        }
+                        &:nth-child(2) {
+                            margin-left: 10px;
+                            transform: rotate(270deg);
+                            position: absolute;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                .attach-options {
+                    color: $clr3;
+                    margin-top: 2px;
+                    small {
+                        margin: 0 5px;
+                    }
+                    span:not(:first-child) {
+                        text-decoration: underline;
+                        cursor: pointer;
+                        &:hover {
+                            color: $clr1;
+                        }
+                    }
+                }
+                .cover-div {
+                    color: $clr3;
+                    display: inline-block;
+                    span {
+                        &:first-child {
+                            font-size: 13px;
+                            margin: 10px 5px;
+                        }
+                        &:nth-child(2) {
+                            text-decoration: underline;
+                            cursor: pointer;
+                            margin-left: 5px;
+                        }
+                    }
+                    &:hover {
+                        color: $clr1;
+                    }
+                }
+            }
+            &:hover {
+                background-color: #eaecf0;
+            }
+        }
+    }
+    .toggle-display {
+        cursor: pointer;
+        text-decoration: underline;
+        color: $clr3;
+        display: block;
+        margin: 2px 0;
+        padding: 6px 12px;
+        transition: background-color 85ms ease;
+        &:hover {
+            color: $clr1;
+            background-color: $clr11;
+        }
+        &:active {
+            background-color: #e4f0f6;
+            color: #0079bf;
+        }
+    }
+}

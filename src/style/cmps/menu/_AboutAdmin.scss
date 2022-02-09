@@ -1,0 +1,13 @@
+.admin {
+    height: 70px;
+    ul {
+        margin: 20px 10px 0;
+        height: 70px;
+        font-weight: 600;
+        :nth-child(2) {
+            color: $clr3;
+            font-weight: 400;
+        }
+    }
+}
+

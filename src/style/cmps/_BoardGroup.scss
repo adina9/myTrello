@@ -1,0 +1,61 @@
+.group {
+    margin: 0px 4px;
+    width: 272px;
+    height: fit-content;
+    background-color: $clr2;
+    border-radius: 3px;
+    padding: 5px;
+    font-size: 14px;
+    // max-height: 95%;
+    vertical-align: top;
+    // overflow-y: overlay;
+    // overflow-x: hidden;
+    &:not(:first-child) {
+        margin-left: 4px;
+    }
+    &:not(:last-child) {
+        margin-right: 4px;
+    }
+    .group-header {
+        padding: 5px;
+        font-weight: 600;
+        p {
+            margin: 0;
+        }
+        input {
+            background-color: $clr7;
+            color: $clr1;
+            height: 28px;
+            padding: 4px 8px;
+            box-shadow: none;
+            line-height: 20px;
+            border: none;
+            outline: none;
+            box-shadow: inset 0 0 0 2px $clr5;
+            margin: -4px 0;
+            width: 90%;
+            overflow-wrap: anywhere;
+            font-size: 14px;
+            font-weight: 600;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+                "Helvetica Neue", sans-serif;
+        }
+        span {
+            font-size: large;
+            color: #6b778c;
+            width: 30px;
+            height: 30px;
+            top: 4px;
+            right: 4px;
+            &:hover{
+                background-color: #dee0e4;
+            }
+            &:active{
+                background-color: #d3d3d4;
+            }
+            // &::before {
+            //     content: "\e952";
+            // }
+        }
+    }
+}

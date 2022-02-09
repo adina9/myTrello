@@ -1,0 +1,163 @@
+.checklists {
+    width: 95%;
+    margin: 20px 0 0 20px;
+    h3 {
+        margin: auto 0;
+        cursor: pointer;
+    }
+    .material-icons-outlined:first-child {
+        margin-right: 15px;
+    }
+    .title-delete {
+        width: 100%;
+        .delete {
+            width: 60px;
+        }
+    }
+    .editTitle,
+    .editTodo {
+        margin: -6% 0 0 6%;
+        width: 94%;
+        textarea {
+            background: $clr10;
+            border-color: $clr13;
+            box-shadow: inset 0 0 0 0.5px $clr13;
+            color: #172b4d;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 19px;
+            overflow: hidden;
+            overflow-wrap: break-word;
+            resize: none;
+            height: 54px;
+            border-radius: 3px;
+            padding: 8px 12px;
+            width: 100%;
+            margin-bottom: -3px;
+            &:focus {
+                outline: none;
+            }
+        }
+        .desc-btns .desc-span {
+            margin-left: 1%;
+            cursor: pointer;
+        }
+    }
+    .proggres-bar {
+        margin-top: 2%;
+
+        span:first-child {
+            font-size: 11px;
+            position: absolute;
+        }
+        div {
+            height: 8px;
+            background-color: $clr11;
+            border-radius: 4px;
+            position: relative;
+            width: 94%;
+            left: 6%;
+            span {
+                height: 8px;
+                background-color: #5ba4cf;
+                position: absolute;
+                transition: 0.5s;
+                border-radius: inherit;
+            }
+        }
+    }
+    .done-Indication {
+        margin-left: 6%;
+    }
+    .todos {
+        .todo {
+            width: 100%;
+            min-height: 36px;
+            cursor: pointer;
+            .checkbox {
+                border-radius: 2px;
+                width: 16px;
+                height: 16px;
+                font-size: 10px;
+                cursor: pointer;
+                span {
+                    color: $clr7;
+                }
+            }
+            .todo-txt {
+                width: 100%;
+                span {
+                    margin-left: 20px;
+                }
+                .dots {
+                    display: none;
+                    font-size: 20px;
+                    margin-right: 10px;
+                    border-radius: 3px;
+                    &:hover {
+                        background-color: $clr11;
+                    }
+                }
+            }
+            .editTodo {
+                margin: 0 0 0 3%;
+                textarea {
+                    border-radius: 3px;
+                    padding: 8px;
+                    font-weight: normal;
+                    font-size: 14px;
+                    margin-bottom: 3px;
+                }
+            }
+            &:hover {
+                background-color: $clr10;
+                .dots {
+                    display: block;
+                }
+            }
+        }
+    }
+    .edit-desc,
+    .adding {
+        margin-left: 35px;
+        user-select: none;
+    }
+    .edit-desc {
+        font-size: 14px;
+        padding: 17px;
+        width: fit-content;
+        &.done {
+            right: 35%;
+            margin-top: 0;
+        }
+    }
+    .adding {
+        textarea {
+            overflow-wrap: break-word;
+            background-color: white;
+            border-radius: 3px;
+            overflow: hidden;
+            box-shadow: none;
+            border: none;
+            line-height: 24px;
+            min-height: 32px;
+            padding: 4px 8px 7px;
+            outline: none;
+            width: 100%;
+            &:focus {
+                background-color: $clr7;
+                box-shadow: inset 0 0 0 2px $clr5;
+            }
+            &::placeholder {
+                color: $clr1;
+            }
+        }
+        .desc-btns {
+            span {
+                margin: 8px 0 0 8px;
+                background-color: unset;
+                cursor: pointer;
+            }
+        }
+    }
+}

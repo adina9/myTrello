@@ -1,0 +1,154 @@
+.group-actions {
+    background-color: $clr7;
+    z-index: 2;
+    top: 40px;
+    left: 90%;
+    width: 304px;
+    box-shadow: 0 8px 16px -4px #091e4240, 0 0 0 1px $clr11;
+    padding: 0 13px;
+    .top {
+        height: 40px;
+        color: #6b778c;
+        border-bottom: 1px solid $clr13;
+        p {
+            margin: 0;
+        }
+        span {
+            &::before {
+                content: "\e91c";
+                padding: 10px 12px 10px 8px;
+                position: absolute;
+                cursor: pointer;
+                right: 2px;
+                top: 0;
+                z-index: 2;
+            }
+            &:hover {
+                color: $clr1;
+            }
+        }
+    }
+    hr {
+        border: 0.1px solid #eaecef;
+        margin: 0;
+    }
+    .actions,
+    .archive-content,
+    .archive-group,
+    .move-group-cards ul {
+        display: flex;
+        flex-direction: column;
+        width: 109%;
+        position: relative;
+        left: -13px;
+        background-color: inherit;
+        padding: 8px 0;
+        span,
+        li {
+            height: 32px;
+            display: flex;
+            align-items: center;
+            padding: 0 14px;
+            cursor: pointer;
+            &:hover {
+                background-color: $clr10;
+            }
+        }
+    }
+    .copy-group,
+    .move-group,
+    .move-group-cards,
+    .archive-group-cards {
+        span {
+            &::before {
+                content: "\e90a";
+                padding: 10px 12px 10px 8px;
+                position: absolute;
+                cursor: pointer;
+                left: 4px;
+                top: 1px;
+                z-index: 2;
+            }
+        }
+        h4 {
+            font-weight: 700;
+        }
+        textarea {
+            box-shadow: inset 0 0 0 2px #dfe1e6;
+            border-radius: 3px;
+            border: none;
+            outline: none;
+            width: 100%;
+            resize: vertical;
+            padding: 5px 10px;
+            &:focus {
+                box-shadow: inset 0 0 0 2px #0079bf;
+            }
+            &:hover:not(:focus) {
+                background-color: $clr2;
+            }
+        }
+        div {
+            width: 110px;
+            margin: 15px 0 12px;
+        }
+        form {
+            gap: 8px;
+            margin: 8px 0px 10px;
+            select {
+                color: $clr1;
+                height: 48px;
+                border-radius: 3px;
+                border: none;
+                cursor: pointer;
+                background-color: $clr10;
+                display: flex;
+                width: 100%;
+                -webkit-appearance: none;
+                padding: 0 12px;
+                &:hover {
+                    background-color: $clr11;
+                }
+                &:focus {
+                    outline: none;
+                }
+                &:active:not(option) {
+                    background-color: #e4f0f6;
+                    color: #0079bf;
+                }
+            }
+            .add-btn {
+                width: 90px;
+                margin: 8px 0;
+            }
+            h4 {
+                left: 25px;
+                font-weight: 500;
+            }
+        }
+        .archive-cards {
+            width: 100%;
+            margin-top: 8px;
+            .add-btn {
+                background-color: $clr12;
+                width: 100%;
+                &:hover {
+                    background-color: #933b27;
+                    color: $clr7;
+                }
+            }
+        }
+    }
+    .move-group-cards {
+        padding: 8px 0 10px;
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+    }
+    .archive-group {
+        border-radius: 3px;
+        padding: 8px 0 10px;
+    }
+}

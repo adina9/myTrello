@@ -1,0 +1,24 @@
+.card-members {
+    li {
+        height: 40px;
+        padding: 4px 28px 4px 4px;
+        margin-bottom: 3px;
+        cursor: pointer;
+        &:hover {
+            background-color: $clr10;
+        }
+        span {
+            position: absolute;
+            right: 32px;
+        }
+    }
+    .no-members {
+        padding: 24px 6px;
+        color: #5e6c84;
+        border-radius: 3px;
+        background-color: $clr10;
+        p {
+            margin: 0;
+        }
+    }
+}

@@ -1,0 +1,86 @@
+.mx-datepicker-popup {
+    top: 50%;
+    
+}
+.mx-datepicker {
+    margin-top: 125%;
+    // margin-left: 100px;
+    margin-bottom: -32px;
+    width: auto;
+    position: unset;
+
+    .mx-input-wrapper {
+        width: 50%;
+        input {
+            overflow-wrap: break-word;
+            border-radius: 3px;
+            height: 32px;
+            width: 90px;
+            line-height: 20px;
+            padding: 0 8px;
+            background-color: $clr7;
+            box-shadow: inset 0 0 0 2px $clr5;
+            outline: none;
+            border: none;
+        }
+    }
+    .mx-icon-calendar {
+        display: none;
+    }
+}
+.mx-datepicker[data-v-04b728a6]{
+    width: auto;
+    margin-right: 10px;
+}
+.card-dates {
+    input {
+        overflow-wrap: break-word;
+        border-radius: 3px;
+        height: 32px;
+        width: 90px;
+        line-height: 20px;
+        padding: 0 8px;
+        background-color: $clr7;
+        box-shadow: inset 0 0 0 2px $clr5;
+        outline: none;
+        border: none;
+        &:nth-of-type(2) {
+            position: absolute;
+            margin-top: 40vh;
+            right: 8vh;
+        }
+        // &[type="checkbox"] {
+        //     position: relative;
+        //     right: 77%;
+        //     top: 3px;
+        //     box-shadow: inset 0 0 0 2px $clr5;
+        //     width: 16px;
+        //     height: 16px;
+        // }
+    }
+    h4 {
+        color: $clr5;
+        font-size: 12px;
+        font-weight: 700;
+        position: relative;
+        display: block;
+        top: -55px;
+    }
+    .date-actions div {
+        cursor: pointer;
+        color: $clr1;
+        background-color: $clr10;
+        height: 32px;
+        margin-bottom: 8px;
+        &:first-of-type {
+            background-color: $clr5;
+            color: $clr7;
+            &:hover {
+                background-color: $clr6;
+            }
+        }
+        &:hover {
+         background-color: $clr11;
+        }
+    }
+}

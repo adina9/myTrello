@@ -1,0 +1,84 @@
+.card-labels {
+   .labels {
+      .pop-over-edit-labels {
+         li > * {
+            cursor: pointer;
+         }
+         li {
+            .label-color {
+               height: 32px;
+               width: 90%;
+               color: $clr7;
+               margin: 0 0 4px;
+               font-weight: 700;
+               padding: 6px 12px;
+               transition: 85ms;
+               span {
+                  position: absolute;
+               }
+               :first-of-type {
+                  filter: brightness(80%);
+                  width: 10px;
+                  height: inherit;
+                  top: 0;
+                  left: -4px;
+                  border-radius: 3px 0 0px 3px;
+               }
+               :nth-child(2) {
+                  right: 5%;
+               }
+               a {
+                  &::before {
+                     content: "\e928";
+                  }
+               }
+               &:hover {
+                  padding-left: 16px;
+                  span {
+                     display: inline-block;
+                  }
+               }
+            }
+            a {
+               border-radius: 3px;
+               padding: 6px;
+               color: $clr9;
+               font-size: 16px;
+               width: 32px;
+               height: 32px;
+               margin: 0 0 4px 8px;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               &::before {
+                  content: "\e928";
+               }
+               &:hover {
+                  background-color: $clr11;
+                  color: $clr1;
+                  svg {
+                     color: $clr1;
+                  }
+               }
+               svg {
+                  font-size: small;
+                  color: $clr9;
+               }
+            }
+         }
+      }
+   }
+   .create-label {
+      border: none;
+      line-height: 20px;
+      padding: 6px 12px;
+      width: 100%;
+      margin: 16px 0 8px;
+      color: $clr1;
+      background-color: $clr10;
+      cursor: pointer;
+      &:hover {
+         background-color: $clr11;
+      }
+   }
+}

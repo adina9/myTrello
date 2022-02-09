@@ -1,0 +1,65 @@
+.card-attachments {
+    ul {
+        padding-bottom: 8px;
+        top: 30px;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        li {
+            padding: 0px 12px;
+            cursor: pointer;
+            height: 34px;
+            display: flex;
+            align-items: center;
+            input {
+                color: transparent;
+                box-shadow: none;
+                padding: 0;
+                height: 34px;
+                &::-webkit-file-upload-button {
+                    visibility: hidden;
+                }
+                &::before {
+                    content: "Computer";
+                    cursor: pointer;
+                    height: 100%;
+                    display: flex;
+                    color: $clr1;
+                    align-items: center;
+                }
+                &:active {
+                    color: unset;
+                    background-color: unset;
+                }
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+            p {
+                margin: 0;
+                padding: 8px 0;
+            }
+            &:hover {
+                background-color: $clr10;
+            }
+        }
+    }
+    .link-attach {
+        margin-top: 25%;
+        border-top: 1px solid $clr13;
+        padding-top: 15px;
+    }
+    h4 {
+        font-size: 12px;
+        font-weight: bold;
+        color: $clr3;
+    }
+    .edit-desc {
+        margin-left: 0;
+        width: 65px;
+    }
+}
+// h3 {
+//     margin: 0;
+//     padding-top: 5px;
+// }

@@ -1,0 +1,60 @@
+/* SETUP */
+@import "./setup/variables";
+@import "./setup/mixins";
+
+/* BASE */
+@import "./base/base";
+@import "./base/helpers";
+@import "./base/layout";
+
+
+/* VIEWS */
+@import "./views/home";
+@import "./views/Boards";
+@import "./views/Board";
+@import "./views/EditCard";
+
+/* COMPONENTS */
+@import "./cmps/AppHeader";
+@import "./cmps/BoardHeader";
+@import "./cmps/BoardGroup";
+@import "./cmps/GroupCards";
+@import "./cmps/GroupCard";
+@import "./cmps/AddGroup";
+@import "./cmps/AddCard";
+@import "./cmps/BoardMenu";
+@import "./cmps/Avatar";
+@import "./cmps/EditDescription";
+@import "./cmps/LabelsList";
+@import "./cmps/Activities";
+@import "./cmps/Badgets";
+@import "./cmps/GroupActions";
+
+//CMP/CARD:
+@import "./cmps/card/DynamicCardCmp";
+@import "./cmps/card/PopOver";
+@import "./cmps/card/CardMembers";
+@import "./cmps/card/CardLabels";
+@import "./cmps/card/CardCover";
+@import "./cmps/card/CardCoverAttachments";
+@import "./cmps/card/CardAttachments";
+@import "./cmps/card/EditLabel";
+@import "./cmps/card/DeleteLabel";
+@import "./cmps/card/CardDates";
+@import "./cmps/card/CardAttachesAdding";
+@import "./cmps/card/Checklists";
+@import "./cmps/card/CardChecklist";
+@import "./cmps/card/ChecklistOptions";
+@import "./cmps/card/Attachments";
+@import "./cmps/card/AttachmentsTrello";
+@import "./cmps/card/DueDate";
+@import "./cmps/card/SideEditing";
+@import "./cmps/card/CardMove";
+
+// CMPS/MENU:
+@import "./cmps/menu/MenuAbout";
+@import "./cmps/menu/Avatar";
+@import "./cmps/menu/AboutAdmin";
+@import "./cmps/menu/MenuColors";
+
+

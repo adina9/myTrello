@@ -1,0 +1,161 @@
+.edit-card-container {
+    height: 100%;
+    width: 100%;
+    background-color: #000000a3;
+    overflow-x: auto;
+}
+.edit-card {
+    width: 768px;
+    background-color: $clr8;
+    border-radius: 2px;
+    overflow: hidden;
+    z-index: 2;
+    box-shadow: 0 0 0 100vw #0000000f;
+    top: 50px;
+    left: 50vw;
+    transform: translateX(-50%);
+    .top {
+        width: 100%;
+        .cover {
+            width: 100%;
+            border-radius: 3px 3px 0 0;
+        }
+        .title p a {
+            text-decoration: underline;
+        }
+    }
+    svg {
+        position: absolute;
+        font-size: 18px;
+        left: 25px;
+        top: 4vh;
+        color: $clr9;
+    }
+    .top-area {
+        &::before {
+            content: "\e912";
+            font-size: x-large;
+            position: absolute;
+            left: 23px;
+            margin-top: 13px;
+            color: $clr9;
+        }
+        svg {
+            position: relative;
+            top: 5vh;
+        }
+        .title {
+            width: 85%;
+            margin: 1.5% auto;
+            .card-title {
+                overflow-wrap: break-word;
+                background: #0000;
+                border-radius: 3px;
+                box-shadow: none;
+                border: none;
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 24px;
+                min-height: 24px;
+                padding: 4px 8px 7px;
+                outline: none;
+                color: $clr1;
+                &:focus {
+                    background-color: $clr7;
+                    box-shadow: inset 0 0 0 2px $clr5;
+                }
+            }
+            p {
+                padding: 0 8px;
+                font-weight: 400;
+                color: $clr3;
+                margin: 0;
+                a {
+                    color: $clr3;
+                    text-decoration: underline;
+                    &:hover {
+                        color: $clr1;
+                    }
+                }
+            }
+        }
+    }
+    .card-area {
+        width: 100%;
+        .main-container {
+            width: 75%;
+            .inner-container {
+                padding-left: 11.5%;
+                & > :not(h4) {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 4px;
+                    & > :not(textarea):not(.top):not(.do-edit-desc):not(.fake-desc):not(.due-date) {
+                        height: 32px;
+                        cursor: pointer;
+                        &:hover {
+                            opacity: 0.8;
+                        }
+                    }
+                    span:not(.desc-span):not(.date-span) {
+                        background-color: $clr10;
+                        width: 32px;
+                    }
+                }
+                .members {
+                    > * {
+                        width: 32px;
+                    }
+                    span {
+                        border-radius: 50%;
+                    }
+                }
+                .labels {
+                    & > :not(span) {
+                        padding: 0 12px;
+                        color: $clr7;
+                        font-weight: 600;
+                        letter-spacing: 0.2px;
+                    }
+                }
+
+                h3 {
+                    margin: 0;
+                    padding-top: 5px;
+                }
+            }
+            svg {
+                position: relative;
+                &:nth-child(2) {
+                    margin-bottom: 5px;
+                }
+            }
+            .squers-icon {
+                display: inline-block;
+                width: fit-content;
+                left: 3.8%;
+                top: 2.3%;
+            }
+            .svg-icon {
+                top: 3%;
+            }
+
+            .open-attach {
+                margin: 5% 0 0 11.5%;
+                width: 30%;
+                &.normal {
+                    margin-top: 0;
+                }
+            }
+        }
+        .side-container {
+            overflow: hidden;
+            padding: 0 16px 8px 8px;
+            h3 {
+                color: $clr3;
+                font-size: 12px;
+                margin: 0 0 -4px;
+            }
+        }
+    }
+}

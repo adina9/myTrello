@@ -1,0 +1,42 @@
+@mixin board-header-btn {
+    border-radius: 3px;
+    color: $clr7;
+    float: left;
+    font-size: 14px;
+    height: 32px;
+    line-height: 32px;
+    max-width: 400px;
+    overflow: hidden;
+    padding: 0 10px;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    transition: 0.1s ease;
+    background-color: #ffffff3d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    span {
+        font-size: larger;
+        margin-right: 10px;
+    }
+    @content;
+    &:hover {
+        background-color: #ffffff52;
+    }
+}
+@mixin h4-title {
+    color: #5e6c84;
+    font-size: 12px;
+    margin: 16px 0 4px;
+}
+@mixin label {
+    height: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    width: 40px;
+    color: $clr7;
+    border-radius: 4px;
+    @content
+}

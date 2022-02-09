@@ -1,0 +1,23 @@
+.delete-label {
+    span {
+        &:first-of-type {
+            font-size: small;
+            top: 10%;
+            left: 5%;
+            cursor: pointer;
+        }
+    }
+    p {
+        margin: 0 0 8px;
+    }
+    div {
+        background-color: $clr12;
+        color: $clr7;
+        height: 32px;
+        cursor: pointer;
+        transition: 85ms;
+        &:hover {
+            background-color: #933b27;
+        }
+    }
+}

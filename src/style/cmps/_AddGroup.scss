@@ -1,0 +1,50 @@
+.add-group {
+    height: 40px;
+    cursor: pointer;
+    width: 272px;
+    transition: 0.2s;
+    margin-left: 8px;
+    span {
+        background-color: #ffffff3d;
+        width: inherit;
+        height: inherit;
+        color: $clr7;
+        &:hover {
+            background-color: #ffffff52;
+        }
+    }
+    .do-add-group {
+        background-color: $clr4;
+        cursor: pointer;
+        height: fit-content;
+        width: inherit;
+        input {
+            background-color: $clr7;
+            box-shadow: inset 0 0 0 2px $clr5;
+            outline: none;
+            padding: 8px 12px;
+            border: none;
+            color: $clr1;
+            height: 36px;
+            letter-spacing: normal;
+            font-size: 14px;
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans,
+                Helvetica Neue, sans-serif;
+        }
+        .add-group-btns {
+            height: 32px;
+            margin-top: 4px;
+            margin-bottom: 7px;
+            transition: margin 85ms ease-in, height 85ms ease-in;
+
+            .close-add-btn {
+                width: 30px;
+                color: #6b778c;
+                margin-top: 5px;
+                &:hover {
+                    color: $clr1;
+                }
+            }
+        }
+    }
+}

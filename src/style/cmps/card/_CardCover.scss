@@ -1,0 +1,32 @@
+.card-cover {
+    .cover-sizes > * {
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    .colors {
+        width: 100%;
+        height: 72px;
+        gap: 7px;
+        > * {
+            width: 50px;
+            height: 32px;
+        }
+    }
+    .action {
+        margin: 8px 0 0;
+        background-color: $clr10;
+        padding: 6px 12px;
+        line-height: 20px;
+        cursor: pointer;
+        width: 100%;
+        border: none;
+        color: $clr1;
+        &:hover {
+            background-color: $clr11;
+        }
+        &:active {
+            color: $clr5;
+            background-color: #e4f0f6;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.board-header:not(.menu) {
+    height: 50px;
+    top: 40px;
+    width: 100%;
+    padding: 8px 10px;
+    .right-side,.left-side {
+        gap: 10px;
+        .bhb {
+            @include board-header-btn;
+            &.show-menu-btn {
+                &::before {
+                    content: "\e952";
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
